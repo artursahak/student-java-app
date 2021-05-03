@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CourseController">
+   <children>
+      <ImageView fx:id="imageContainer" fitHeight="248.0" fitWidth="285.0" layoutX="158.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@../../Images/fw1.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="titleContainer" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="573.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Text>
+      <TextArea fx:id="descriptionContainer" editable="false" layoutX="14.0" layoutY="334.0" prefHeight="123.0" prefWidth="573.0" style="-fx-border: none; -fx-background-color: grey;" wrapText="true" />
+   </children>
+</AnchorPane>

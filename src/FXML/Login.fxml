@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="177.0" layoutY="182.0" prefHeight="31.0" prefWidth="264.0" promptText="Username" style="-fx-border: none;" />
+      <Button fx:id="login" layoutX="347.0" layoutY="322.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: linear-gradient(to bottom right, maroon, orange); -fx-text-fill: white;" text="Login" />
+      <PasswordField fx:id="password" layoutX="176.0" layoutY="247.0" prefHeight="31.0" prefWidth="264.0" promptText="Password" />
+      <TextField fx:id="label" layoutX="179.0" layoutY="117.0" prefHeight="31.0" prefWidth="264.0" style="-fx-background-color: lightgray; -fx-text-fill: black;" text="                 Welcome, Student" />
+      <CheckBox fx:id="remember" layoutX="194.0" layoutY="327.0" mnemonicParsing="false" text="Remember me" />
+      <Button fx:id="forgotpassword" layoutX="212.0" layoutY="379.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Forgot your password?" underline="true" />
+
+      <ImageView fx:id="logo" fitHeight="91.0" fitWidth="489.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <!-- to be set by code -->
+      </ImageView>
+      <Button fx:id="signup" layoutX="555.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#signUp" style="-fx-background-color: linear-gradient(to bottom right, maroon, orange); -fx-text-fill: white;" text="Sign up">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ProgressBar fx:id="progressBar" layoutX="191.0" layoutY="416.0" prefWidth="200.0" progress="0.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="406.0" layoutY="411.0" progress="0.0" />
+
+   </children>
+</AnchorPane>
